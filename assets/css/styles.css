@@ -11,6 +11,9 @@
 }
 
 /* *==== Base ==== */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Mulish", sans-serif;
 }
@@ -32,10 +35,6 @@ p {
 }
 
 /* *==== Navbar ==== */
-/* .navbar {
-  margin-top: 25px;
-  height: 80px;
-} */
 .navbar {
   position: fixed;
   margin-top: 0;
@@ -48,7 +47,6 @@ p {
   transition: all 0.4s ease-in-out;
 }
 .navbar.sticky {
-  /* border-bottom: 1px solid #333; */
   height: 70px;
   box-shadow: 5px 4px 5px rgba(148, 148, 148, 0.4);
 }
@@ -128,7 +126,6 @@ p {
   position: relative;
 }
 .hero .grid {
-  /* grid-template-columns: 59% 41%; */
   grid-template-columns: 49% 51%;
 }
 .hero-title {
@@ -171,7 +168,6 @@ p {
 }
 .service .grid {
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-columns: repeat(3, minmax(213px, 1fr)); */
 }
 .service-bg-left {
   position: absolute;
@@ -200,7 +196,6 @@ p {
   font-size: 18px;
 }
 .service .card {
-  /* height: 308px; */
   margin: 0;
   padding: 37px 15px 37px 15px;
   height: 100%;
@@ -221,17 +216,13 @@ p {
   margin-top: 150px;
 }
 .healthcare .grid {
-  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: 45% 55%;
-  /* grid-template-columns: auto auto; */
 }
 .healthcare img {
-  /* height: 447px; */
   width: 100%;
   height: auto;
 }
 .healthcare-title {
-  /* position: relative; */
   margin-top: -20px;
   margin-left: 70px;
 }
@@ -253,8 +244,6 @@ p {
   right: -59px;
 }
 .app img {
-  /* height: 434px; */
-  /* align-self: flex-start; */
   width: 100%;
   height: auto;
 }
@@ -270,7 +259,6 @@ p {
 /* *==== Article ==== */
 .article {
   padding-top: 130px;
-  /* position: relative; */
   overflow: hidden;
 }
 .article .container {
@@ -300,7 +288,6 @@ p {
   position: relative;
   padding: 0;
   justify-self: center;
-  /* width: 100%; */
   height: 100%;
 }
 .article .card img {
@@ -495,19 +482,6 @@ p {
 
 /* *==== For mobile and under ==== */
 @media (max-width: 768px) {
-  /* .navbar ul {
-    display: none;
-  } */
-
-  /* .navbar {
-    position: fixed;
-    margin-top: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff600;
-    z-index: 10;
-  } */
   /* *== Menu-btn == */
   .navbar ul a {
     color: white;
@@ -526,7 +500,6 @@ p {
     background-color: var(--primary-color);
     height: 35vh;
     border-radius: 5px;
-    /* transform: translateX(120vw); */
     transform: translateX(120vw);
     transition: all 0.4s ease-in-out;
   }
@@ -535,8 +508,6 @@ p {
   }
   .menu-items.open {
     transform: translateX(0vw);
-    /* z-index: -10; */
-    /* background-color: transparent; */
   }
 
   /* *== Hero == */
@@ -563,7 +534,6 @@ p {
     padding: 0 30px;
   }
   .service .card {
-    /* height: 100%; */
     align-self: center;
     margin: 2px;
     padding: 11px;
