@@ -256,9 +256,97 @@ p {
   padding-right: 10px;
 }
 
+/* *==== Customer-Review ==== */
+.customer-review {
+  margin-top: 100px;
+  position: relative;
+  height: 400px;
+}
+.customer-review h2 {
+  text-align: center;
+  color: #fff;
+}
+.customer-review hr {
+  margin-left: 430px;
+  background-color: #fff;
+}
+.customer-review-bg-top {
+  position: absolute;
+  top: 20px;
+  right: -10px;
+}
+.customer-review .grid {
+  margin: 0 0px;
+}
+.customer-review .card {
+  position: relative;
+  background-image: linear-gradient(#67c3f3, #5a98f2);
+}
+.customer-profile img {
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  border: 5px solid #fff;
+}
+.customer-name {
+  margin-left: 30px;
+  color: #fff;
+}
+.customer-said,
+.customer-name p {
+  color: white;
+  font-size: 16px;
+  padding: 0 100px 0 0;
+}
+
+.card-slider {
+  position: relative;
+}
+.card-slider .slide {
+  position: absolute;
+  z-index: 1;
+  clip-path: polygon(100% 1%, 100% 1%, 75% 100%, 75% 100%);
+
+  transform: translateX(-30vw);
+}
+.card-slider .slide.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: 3s;
+  transform: translateX(1vw);
+}
+.customer-review .navigation {
+  z-index: 2;
+  position: absolute;
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -370px;
+}
+.customer-review .navigation .slide-btn {
+  background-color: var(--primary-color);
+  opacity: 0.3;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+.card-slider .navigation .slide-btn.active {
+  background-color: var(--primary-color);
+  opacity: 1;
+}
+.customer-review .navigation .pre,
+.customer-review .navigation .next {
+  color: var(--primary-color);
+  margin: 0 70px;
+  cursor: pointer;
+}
+
 /* *==== Article ==== */
 .article {
-  padding-top: 130px;
+  /* padding-top: 130px; */
   overflow: hidden;
 }
 .article .container {
