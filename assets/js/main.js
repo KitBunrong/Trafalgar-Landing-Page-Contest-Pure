@@ -64,4 +64,4 @@ document.querySelector(".pre").addEventListener("click", pre);
 // *== Auto Slider per 10s.
 setInterval(() => {
   next();
-}, 5000);
+}, 6000);

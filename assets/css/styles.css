@@ -312,7 +312,7 @@ p {
 .card-slider .slide.active {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   transition: 3s;
-  transform: translateX(1vw);
+  transform: translateX(0);
 }
 .customer-review .navigation {
   z-index: 2;
@@ -566,6 +566,14 @@ p {
   .footer .container > :nth-child(4) {
     margin-top: 40px;
   }
+
+  /* *== Customer-review == */
+  .customer-review .underline {
+    margin: 20px auto;
+  }
+  .customer-review .sub-container {
+    max-width: 700px;
+  }
 }
 
 /* *==== For mobile and under ==== */
@@ -657,7 +665,25 @@ p {
     padding: 20px;
     margin-top: 20px;
   }
+
+  /* *== Customer-review == */
+  .customer-review .sub-container {
+    max-width: 500px;
+  }
+  .customer-review .grid {
+    grid-template-columns: 1fr;
+  }
+  .customer-said {
+    padding: 0 20px;
+  }
+  .customer-review .navigation {
+    bottom: -440px;
+  }
+
   /* *== Article == */
+  .article {
+    margin-top: 80px;
+  }
   .article .sub-container {
     padding: 0 70px;
   }
@@ -742,9 +768,13 @@ p {
   .app {
     padding: 0;
   }
-
   .article {
     padding: 0;
+  }
+
+  /* *== Customer-review == */
+  .customer-review .sub-container {
+    max-width: 400px;
   }
 
   /* *== Article == */
