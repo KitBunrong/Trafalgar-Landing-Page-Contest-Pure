@@ -261,6 +261,7 @@ p {
   margin-top: 100px;
   position: relative;
   height: 400px;
+  /* width: 400px; */
 }
 .customer-review h2 {
   text-align: center;
@@ -298,7 +299,6 @@ p {
   font-size: 16px;
   padding: 0 100px 0 0;
 }
-
 .card-slider {
   position: relative;
 }
@@ -578,7 +578,10 @@ p {
 
 /* *==== For mobile and under ==== */
 @media (max-width: 768px) {
-  /* *== Menu-btn == */
+  /* *== Navbar == */
+  .navbar a {
+    margin: 0;
+  }
   .navbar ul a {
     color: white;
   }
@@ -591,7 +594,7 @@ p {
     position: absolute;
     top: 100px;
     left: 60px;
-    right: 55px;
+    right: 60px;
     padding: 10px 23px;
     background-color: var(--primary-color);
     height: 35vh;
@@ -668,7 +671,7 @@ p {
 
   /* *== Customer-review == */
   .customer-review .sub-container {
-    max-width: 500px;
+    max-width: 480px;
   }
   .customer-review .grid {
     grid-template-columns: 1fr;
@@ -718,6 +721,10 @@ p {
 }
 /* *==== For device below 500px ==== */
 @media (max-width: 500px) {
+  /* *== Navbar == */
+  .navbar a {
+    margin: 0px 10px;
+  }
   .menu-items {
     left: 15px;
     right: 15px;
@@ -739,6 +746,10 @@ p {
   }
   .hero-img {
     padding: 0;
+  }
+  /* *== Hero == */
+  .hero-title a {
+    display: none;
   }
 
   /* *== Service == */
@@ -773,8 +784,28 @@ p {
   }
 
   /* *== Customer-review == */
-  .customer-review .sub-container {
-    max-width: 400px;
+  .customer-review {
+    margin-left: 9px;
+    margin-right: 5px;
+    height: 400px;
+  }
+  .customer-review .card {
+    width: auto;
+    /* height: 390px; */
+  }
+  .card-slider .card {
+    padding: 20px 0;
+    margin: 10px;
+  }
+  .customer-review-bg-top {
+    display: none;
+    opacity: 0.3;
+  }
+  .customer-name p {
+    padding: 0;
+  }
+  .customer-review .navigation {
+    display: none;
   }
 
   /* *== Article == */
@@ -811,5 +842,9 @@ p {
   .footer p,
   .footer nav a {
     font-size: 16px;
+  }
+  .footer-bg-top,
+  .footer-bg-bottom {
+    opacity: 0.3;
   }
 }
