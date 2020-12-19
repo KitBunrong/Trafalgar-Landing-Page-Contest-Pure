@@ -11,6 +11,22 @@ function toggle() {
   menuItems.classList.toggle("open");
 }
 
+// *==== onClick a-link, hide it
+const aLink = document.querySelectorAll(".a-link");
+// var linkClick = function (manual) {
+//   aLink.forEach((c) => {
+//     c.classList.remove("active");
+//   });
+//   aLink[manual].classList.add("active");
+// };
+
+aLink.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    // linkClick(i);
+    toggle();
+  });
+});
+
 // *==== Scroll to show shadow
 window.addEventListener("scroll", function () {
   var navbar = document.querySelector(".navbar");
@@ -28,9 +44,6 @@ let currentSlide = 0;
 var manualNav = function (manual) {
   slides.forEach((slide) => {
     slide.classList.remove("active");
-
-    // profile.classList.add("active");
-
     btns.forEach((btn) => {
       btn.classList.remove("active");
     });
