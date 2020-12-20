@@ -544,7 +544,7 @@ p {
 
 /* *==== For Tablet and under ==== */
 @media (max-width: 1023px) {
-  /* *== article == */
+  /* *== Article == */
   .article-align-btn {
     grid-column: 1;
   }
@@ -562,7 +562,7 @@ p {
     min-height: 30px;
   }
 
-  /* *== footer == */
+  /* *== Footer == */
   .footer {
     height: 100%;
   }
@@ -766,8 +766,6 @@ p {
   .hero-img {
     padding: 0;
   }
-
-  /* *== Hero == */
   .hero-title a {
     display: none;
   }
