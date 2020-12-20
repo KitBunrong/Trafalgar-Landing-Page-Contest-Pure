@@ -13,16 +13,8 @@ function toggle() {
 
 // *==== onClick a-link, hide it
 const aLink = document.querySelectorAll(".a-link");
-// var linkClick = function (manual) {
-//   aLink.forEach((c) => {
-//     c.classList.remove("active");
-//   });
-//   aLink[manual].classList.add("active");
-// };
-
 aLink.forEach((btn, i) => {
   btn.addEventListener("click", () => {
-    // linkClick(i);
     toggle();
   });
 });

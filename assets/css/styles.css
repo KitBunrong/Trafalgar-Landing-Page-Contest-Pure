@@ -131,6 +131,7 @@ p {
 .hero-title {
   padding-left: 23px;
   width: 500px;
+  animation: slideFromLeft 0.8s ease-in;
 }
 .hero-title h1 {
   font-size: 48px;
@@ -146,6 +147,7 @@ p {
 .hero-img {
   justify-self: flex-end;
   padding: 0 30px;
+  animation: slideFromRight 0.8s ease-in;
 }
 .hero-img img {
   width: 100%;
@@ -161,7 +163,7 @@ p {
 
 /* *==== Service ==== */
 .service {
-  margin-top: 100px;
+  padding-top: 40px;
 }
 .service .container {
   position: relative;
@@ -233,7 +235,7 @@ p {
 
 /* *==== Apps ==== */
 .app {
-  padding-top: 130px;
+  padding-top: 80px;
   position: relative;
   overflow: hidden;
 }
@@ -261,7 +263,6 @@ p {
   margin-top: 100px;
   position: relative;
   height: 400px;
-  /* width: 400px; */
 }
 .customer-review h2 {
   text-align: center;
@@ -346,7 +347,7 @@ p {
 
 /* *==== Article ==== */
 .article {
-  /* padding-top: 130px; */
+  padding-top: 40px;
   overflow: hidden;
 }
 .article .container {
@@ -464,6 +465,24 @@ p {
   position: absolute;
   right: 25px;
   top: -70px;
+}
+
+/* *==== Animation ==== */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* *==== Utilities ==== */
@@ -705,7 +724,6 @@ p {
   .footer .f-trafalgar {
     grid-column: 1 / span 3;
   }
-
   .f-trafalgar,
   .footer .container > :nth-child(2),
   .footer .container > :nth-child(3),
@@ -729,6 +747,7 @@ p {
     left: 15px;
     right: 15px;
   }
+
   /* *== Hero == */
   .navbar .container {
     padding: 0 20px 0 0;
@@ -747,6 +766,7 @@ p {
   .hero-img {
     padding: 0;
   }
+
   /* *== Hero == */
   .hero-title a {
     display: none;
@@ -791,7 +811,6 @@ p {
   }
   .customer-review .card {
     width: auto;
-    /* height: 390px; */
   }
   .card-slider .card {
     padding: 20px 0;
